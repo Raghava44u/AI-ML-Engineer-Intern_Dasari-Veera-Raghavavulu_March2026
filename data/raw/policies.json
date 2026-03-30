@@ -1,0 +1,24 @@
+{
+    "policies": [
+        {
+            "policy_id": "MIT_Academic_Performance",
+            "title": "MIT Academic Performance Policy",
+            "grading_rules": "A, B, C, D, F. Plus/minus modifiers.",
+            "repeat_policies": "Can repeat for grade replacements under certain rules.",
+            "credit_limits": "Varies per semester, usually up to 54-60 units.",
+            "description": "Page Not Found The URL /mit/procedures/academic-performance/ was not found in the catalog. Similar pages:Academic Performance and Grades Policies and Procedures ROTC Programs Financial Aid Admissions General Degree Requirements Department of Mechanical Engineering Department of Nuclear Science and Engineering First Year Department of Materials Science and Engineering Graduate Programs in Transportation Registration",
+            "source_url": "https://catalog.mit.edu/mit/procedures/academic-performance/",
+            "date_accessed": "2026-03-30T09:11:27.538676"
+        },
+        {
+            "policy_id": "Stanford_Grading_Policies",
+            "title": "Stanford Grades and Grading Policies",
+            "grading_rules": "A, B, C, D, NP, CR/NC",
+            "repeat_policies": "Repeated courses do not accumulate duplicate units toward graduation.",
+            "exceptions": "Instructor consent required for exceptions.",
+            "description": "Page Not Found | Student Services Skip to main content Skip to secondary navigation Stanford University (link is external) Stanford Student Services Search this site Submit Search Menu HomeAcademicsEnroll in ClassesWhen do I enroll?Dates & DeadlinesEnrollment Group TimesEnrollment Group FAQsSummer QuarterHow do I enroll?Plan Your ClassesView & Edit Your Planned ClassesBatch Enroll in ClassesEnroll in a ClassView & Edit Your Enrolled ClassesDrop a ClassAdjust Units and/or Grading BasisSwap Associated Sections (Lab/Discussion)Summer QuarterComponents & TroubleshootingSpecial Registration StatusesLast Units Out of ResidenceRequest Transcripts & CertificationsTranscriptsFrequently Asked QuestionsThird Party Transcript RequestsRequest an Official TranscriptSend a Transcript to AMCASSend a Transcript to LSACView My Unofficial TranscriptValidate an Electronic TranscriptTranscripts for AlumniRequesting Official Transcripts for AlumniRequest a Transcript for a Deceased AlumCertifications and VerificationsDegree CertificationDegree Certification for H-1BEnrollment CertificationStatement of CompletionEarn My DegreeUndergraduate StudentsUndergraduate Academic Progress StatusesUndergraduate Degree RequirementsUndergraduate HonorsHow do I make changes to my undergraduate program?Undergraduate Majors and MinorsHow do I make changes to my undergraduate program?Undergraduate Minimum ProgressTest & Transfer CreditExternal Test CreditCurrent Test Credit EquivalenciesPrior Year Test Credit ChartsHow Do I Add Credit by Exam to My RecordTransfer CreditHow do I request transfer credit?Transfer Credit DatabaseCoterm StudentsCoterm EligibilityExplore Coterm ProgramsCoterm Application ProcessCoterm Academic ProgressCoterm Course TransferCoterm Degree Conferral and Residency RequirementCoterm Program ChangesCoterm Tuition AssessmentGraduate StudentsDissertations and ThesesPrepare Your Work for SubmissionFormat Requirements for Your Dissertation or ThesisTitle Page for Ph.D. DissertationTitle Page for an Engineer ThesisRegistering Your ORCID iDSubmit Your Dissertation or ThesisChecklist: Submitting My Dissertation or ThesisSteps After SubmissionHow To Submit Your Reading Committee Signature PageHow To Request to Use Copyrighted MaterialHow To Use the Dissertation and Thesis CenterFAQs: Dissertation & ThesisGraduate Program ChangesUniversity Graduate Residency RequirementsGraduate Residency Transfer CreditTerminal Graduate Registration (TGR) StatusTGR Final Registration StatusSummer Quarter TGRStanford Exchange ProgramsUniversity of California Exchange ProgramIvyPlus Exchange Scholar ProgramMilestones FAQsUniversity-Required Non-Course Milestones by DegreeEvaluations, Exams, & GradesOnline Course EvaluationsFinal Exam ScheduleFinal Exam Schedule 2024-2025Final Exam Schedule 2023-2024Final Exam Schedule 2022-2023Final Exam Schedule 2021-2022GradesCalculate Your GPAGeneral University Grading SystemGraduate School of Business Grading SystemSchool of Law Grading SystemSchool of ",
+            "source_url": "https://registrar.stanford.edu/students/grades-and-grading-policies",
+            "date_accessed": "2026-03-30T09:11:30.531805"
+        }
+    ]
+}

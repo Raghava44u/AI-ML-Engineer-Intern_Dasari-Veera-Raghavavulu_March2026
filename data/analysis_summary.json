@@ -1,0 +1,15 @@
+{
+    "Total_Documents": 382,
+    "Total_Words": 36548,
+    "Average_Words_Per_Doc": 95,
+    "Category_Counts": {
+        "Course": 377,
+        "Program": 3,
+        "Policy": 2
+    },
+    "Source_Counts": {
+        "MIT": 379,
+        "Stanford": 2,
+        "BITS Pilani": 1
+    }
+}

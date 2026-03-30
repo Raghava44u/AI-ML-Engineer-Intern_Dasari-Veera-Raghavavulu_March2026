@@ -1,0 +1,580 @@
+[
+  {
+    "case": {
+      "id": "PR-01",
+      "category": "prereq_check",
+      "query": "Can I take 6.1210 if I completed 6.100A?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.16666666666666666,
+    "latency": 0.23250532150268555,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1210: Not Eligible.\n\nComplete missing prerequisites before enrolling: 6.1200 OR 6.120A OR {'OR': [[{'OR': [[{'OR': [['6.3700'], ['6.3800']]}], ['18.05']]}], ['18.600']]}\n\nFull prerequisite requirement: '6.100A and ( 6.1200 or ( 6.120A and ( 6.3700 , 6.3800 , 18.05 , or 18.600 )))'\n\nWHY (Requirements / Prerequisites Satisfied):\nMissing prerequisites: 6.1200 OR 6.120A OR {'OR': [[{'OR': [[{'OR': [['6.3700'], ['6.3800']]}], ['18.05']]}], ['18.600']]}.\nFull prerequisite requirement: '6.100A and ( 6.1200 or ( 6.120A and ( 6.3700 , 6.3800 , 18.05 , or 18.600 )))'\n(Source: EECS/Math (MIT), chunk: course_6.1210_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1210_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.327_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1210_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-02",
+      "category": "prereq_check",
+      "query": "Am I eligible for 6.1020? I've finished 6.1010.",
+      "student_info": {
+        "completed_courses": [
+          "6.1010",
+          "6.1210",
+          "6.1200",
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.10218381881713867,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1020: Eligible.\n\nYou are eligible to enroll in 6.1020. Register during your enrollment window.\n\nFull prerequisite requirement: '6.1010'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: 6.1010.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.1020_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1020_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1020_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-03",
+      "category": "prereq_check",
+      "query": "Can I enroll in 6.1220[J] if I took 6.1210 and 6.1200?",
+      "student_info": {
+        "completed_courses": [
+          "6.1210",
+          "6.1200",
+          "18.01"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.08464694023132324,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1220[J]: Eligible.\n\nYou are eligible to enroll in 6.1220[J]. Register during your enrollment window.\n\nFull prerequisite requirement: '6.1200 and 6.1210'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: 6.1200, 6.1210.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.1220[J]_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1220[J]_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.994_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1220[J]_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-04",
+      "category": "prereq_check",
+      "query": "Check eligibility for 6.1200[J]. I have 18.01.",
+      "student_info": {
+        "completed_courses": [
+          "18.01"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.25,
+    "latency": 0.06756234169006348,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1200[J]: Eligible.\n\nYou are eligible to enroll in 6.1200[J]. Register during your enrollment window.\n\nFull prerequisite requirement: 'Calculus I (GIR)'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: None required.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.1200[J]_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1200[J]_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.994_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1200[J]_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-05",
+      "category": "prereq_check",
+      "query": "Can I take 18.02 after finishing 18.01?",
+      "student_info": {
+        "completed_courses": [
+          "18.01"
+        ],
+        "target_program": "MIT Course 18",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.25,
+    "latency": 0.08112859725952148,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 18.02: Eligible.\n\nYou are eligible to enroll in 18.02. Register during your enrollment window.\n\nFull prerequisite requirement: 'Calculus I (GIR)'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: None required.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_18.02_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.02_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.994_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_18.02_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-06",
+      "category": "prereq_check",
+      "query": "Am I ready for 6.1010? I haven't taken any CS classes yet.",
+      "student_info": {
+        "completed_courses": [],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.16666666666666666,
+    "latency": 0.05207467079162598,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1010: Not Eligible.\n\nComplete missing prerequisites before enrolling: 6.1000 OR 6.100A OR {'OR': [['6.100B'], ['16.C20']]}\n\nFull prerequisite requirement: '6.1000 or ( 6.100A and ( 6.100B or 16.C20 ))'\n\nWHY (Requirements / Prerequisites Satisfied):\nMissing prerequisites: 6.1000 OR 6.100A OR {'OR': [['6.100B'], ['16.C20']]}.\nFull prerequisite requirement: '6.1000 or ( 6.100A and ( 6.100B or 16.C20 ))'\n(Source: EECS/Math (MIT), chunk: course_6.1010_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1010_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.327_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1010_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-07",
+      "category": "prereq_check",
+      "query": "Can I take 6.1800? I have 6.1910, 6.1210 and 6.1020.",
+      "student_info": {
+        "completed_courses": [
+          "6.1910",
+          "6.1210",
+          "6.1020",
+          "6.100A",
+          "6.1200"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.112213134765625,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1800: Eligible.\n\nYou are eligible to enroll in 6.1800. Register during your enrollment window.\n\nFull prerequisite requirement: '6.1910'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: 6.1910.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.1800_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1800_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1800_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-08",
+      "category": "prereq_check",
+      "query": "Is 18.06 accessible if I have 18.02?",
+      "student_info": {
+        "completed_courses": [
+          "18.02"
+        ],
+        "target_program": "MIT Course 18",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.25,
+    "latency": 0.08083772659301758,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 18.06: Eligible.\n\nYou are eligible to enroll in 18.06. Register during your enrollment window.\n\nFull prerequisite requirement: 'Calculus II (GIR)'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: None required.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_18.06_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.06_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.994_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_18.06_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-09",
+      "category": "prereq_check",
+      "query": "Can I take 6.3900 if I have 6.100A, 6.1210 and 18.06?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A",
+          "6.1210",
+          "18.06",
+          "18.02"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.11192989349365234,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.3900: Eligible.\n\nYou are eligible to enroll in 6.3900. Register during your enrollment window.\n\nFull prerequisite requirement: '( 6.1010 or 6.1210 ) and ( 18.03 , 18.06 , 18.700 , or 18.C06 )'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: 18.06, 6.1210.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.3900_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3900_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.3900_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PR-10",
+      "category": "prereq_check",
+      "query": "Prerequisite check for 6.1910. I have 6.100A and 8.02.",
+      "student_info": {
+        "completed_courses": [
+          "6.100A",
+          "8.02"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.16666666666666666,
+    "latency": 0.08994030952453613,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite check for 6.1910: Eligible.\n\nYou are eligible to enroll in 6.1910. Register during your enrollment window.\n\nFull prerequisite requirement: 'Physics II (GIR) , 6.100A , and ( Coreq: 6.1903 or 6.1904 ); or permission of instructor'\n\nWHY (Requirements / Prerequisites Satisfied):\nAll prerequisites satisfied: 6.100A.\nNote: Course also mentions permission of instructor as an option/requirement.\nCorequisite(s) can be taken concurrently: 6.1903, 6.1904.\nOffered: Not specified.\n(Source: EECS/Math (MIT), chunk: course_6.1910_chunk_0)\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1910_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.327_chunk_0\n\nCLARIFYING QUESTIONS:\n  1. Do you have grades for your completed courses? Some courses require minimum grades (e.g., C or better).\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Course availability by term not verified — check current course schedule.\n  ⚠️  Prerequisite information from catalog year 2024-2025 (chunk: course_6.1910_chunk_0).\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "CH-01",
+      "category": "prereq_chain",
+      "query": "What is the full prerequisite chain for 6.1210?",
+      "student_info": {
+        "completed_courses": [],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.06154012680053711,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite Chain Analysis for 6.1210:\n\nSTEP-BY-STEP PREREQUISITE CHAIN:\n  Step 1: 6.1210 — ❌ NOT COMPLETED\n    Prerequisites: Unknown\n\nMissing for 6.1210: No data for 6.1210\n\nWHY (Requirements / Prerequisites Satisfied):\nChain analysis traced all prerequisite dependencies for 6.1210. Completed courses: None. Remaining prerequisites: None.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.S097_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.701_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.725_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.703_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100P_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100Q_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.06_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Chain analysis uses prerequisite data from the current catalog year.\n  ⚠️  Some prerequisites may have OR alternatives not fully explored.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "CH-02",
+      "category": "prereq_chain",
+      "query": "In what order should I take courses to reach 6.1800?",
+      "student_info": {
+        "completed_courses": [],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.06797552108764648,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite Chain Analysis for 6.1800:\n\nSTEP-BY-STEP PREREQUISITE CHAIN:\n  Step 1: 6.1800 — ❌ NOT COMPLETED\n    Prerequisites: Unknown\n\nMissing for 6.1800: No data for 6.1800\n\nWHY (Requirements / Prerequisites Satisfied):\nChain analysis traced all prerequisite dependencies for 6.1800. Completed courses: None. Remaining prerequisites: None.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.701_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.703_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.600_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100P_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3800_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100Q_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Chain analysis uses prerequisite data from the current catalog year.\n  ⚠️  Some prerequisites may have OR alternatives not fully explored.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "CH-03",
+      "category": "prereq_chain",
+      "query": "Show me the path to 6.1020 starting from 6.100A.",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Eligible",
+    "passed": false,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.08657479286193848,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ✅ Eligible\n\nANSWER / PLAN:\nPrerequisite Chain Analysis for 6.100A:\n\nSTEP-BY-STEP PREREQUISITE CHAIN:\n  Step 1: 6.100A — ✅ COMPLETED\n    Prerequisites: None\n\n✅ All prerequisites for 6.100A are satisfied!\n\nWHY (Requirements / Prerequisites Satisfied):\nChain analysis traced all prerequisite dependencies for 6.100A. Completed courses: 6.100A. Remaining prerequisites: None.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.701_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.703_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.600_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100P_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.510_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Chain analysis uses prerequisite data from the current catalog year.\n  ⚠️  Some prerequisites may have OR alternatives not fully explored.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "CH-04",
+      "category": "prereq_chain",
+      "query": "What do I need to complete before I can take 6.4310?",
+      "student_info": {
+        "completed_courses": [],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.08080792427062988,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite Chain Analysis for 6.4310:\n\nSTEP-BY-STEP PREREQUISITE CHAIN:\n  Step 1: 6.4310 — ❌ NOT COMPLETED\n    Prerequisites: Unknown\n\nMissing for 6.4310: No data for 6.4310\n\nWHY (Requirements / Prerequisites Satisfied):\nChain analysis traced all prerequisite dependencies for 6.4310. Completed courses: None. Remaining prerequisites: None.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.S097_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.701_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.703_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.600_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100P_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3800_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Chain analysis uses prerequisite data from the current catalog year.\n  ⚠️  Some prerequisites may have OR alternatives not fully explored.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "CH-05",
+      "category": "prereq_chain",
+      "query": "Give me the sequence of courses to reach 6.046 for the Algorithms track.",
+      "student_info": {
+        "completed_courses": [],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "Not Eligible",
+      "is_out_of_scope": false
+    },
+    "actual_decision": "Not Eligible",
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 0.2,
+    "latency": 0.09023165702819824,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nDECISION: ❌ Not Eligible\n\nANSWER / PLAN:\nPrerequisite Chain Analysis for 6.046:\n\nSTEP-BY-STEP PREREQUISITE CHAIN:\n  Step 1: 6.046 — ❌ NOT COMPLETED\n    Prerequisites: Unknown\n\nMissing for 6.046: No data for 6.046\n\nWHY (Requirements / Prerequisites Satisfied):\nChain analysis traced all prerequisite dependencies for 6.046. Completed courses: None. Remaining prerequisites: None.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1810_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.3800_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100Q_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100B_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.703_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.100A_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.700_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.510_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.1020_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.701_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Chain analysis uses prerequisite data from the current catalog year.\n  ⚠️  Some prerequisites may have OR alternatives not fully explored.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PG-01",
+      "category": "program_req",
+      "query": "What are the core requirements for the MIT Course 6-3 major?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "N/A",
+      "is_out_of_scope": false
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 1.0,
+    "latency": 0.1044003963470459,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nBased on the catalog context for MIT Course 6-3:\n\n{\n    \"program\": {\n        \"program_name\": \"MIT Course 6-3 (Computer Science)\",\n        \"total_credits_required\": \"180-192 units\",\n        \"core_courses\": \"6.1000, 6.100A& 6.100B, 6.100A& 16.C20[J], 6.1010, 6.1020, 6.1200[J], 6.1210, 6.1400[J], or 6.1220[J], 6.1800...\",\n        \"elective_requirements\": \"Restricted and Unrestricted electives\",\n        \"description\": \"Computer Science and Engineering (Course 6-3) | MIT Course Catalog Skip to Content AZ Index Bulletin Home MIT Home A – ZCalendar Archive Print Degree Charts Home>Degree Charts>Computer Science and Engineering (SB, Course 6-3) Search Catalog Submit search Catalog Navigation This Is MITToggle This Is MIT OverviewToggle Overview Around Campus Academic Program Administration Alumni Campus LifeToggle Campus Life Activities Arts at MIT Athletics Campus Media Dining Fraternities, Sororities, and Independent Living Groups Health Services Housing Parking Priscilla King Gray Public Service Center Religious, Spiritual, and Ethical Life Student Government Work-​Life and Family Resources Academic ResourcesToggle Academic Resources Advising and Support Digital Learning Disability and Access Services Information Systems and Technology Libraries Student Financial Services WebSIS Writing and Communication Center Undergraduate EducationToggle Undergraduate Education Academic ProgramsToggle Academic Programs First Year Major Course of Study Minors General Institute Requirements Academic and Research OptionsToggle Academic and Research Options Independent Activites Period Undergraduate Research Opportunities Program First-​Year Advising Seminars Interphase EDGE/​x Edgerton Center Flexible Grading Option Study at Other Universities Internships Abroad Career and Professional OptionsToggle Career and Professional Options Career Advising and Professional Development Teacher Licensure and Education ROTC Programs Admissions Costs Financial Aid Medical Requirements Graduate EducationToggle Graduate Education Graduate Study at MIT \n\nWHY (Requirements / Prerequisites Satisfied):\nRetrieved 6 relevant catalog sections for this query.\n\nCITATIONS:\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100L_chunk_0\n  • [Academic Policies] URL: https://catalog.mit.edu/policies | Chunk: policy_policy_0_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_1\n  • [Program 0] URL: local://program_0.txt | Chunk: program_0_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Program requirement information from catalog year 2024-2025.\n  ⚠️  Verify current requirements with academic advisor.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PG-02",
+      "category": "program_req",
+      "query": "How many units are required to graduate with a 6-3 degree?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "N/A",
+      "is_out_of_scope": false
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 1.0,
+    "latency": 0.09242820739746094,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nBased on the catalog context for MIT Course 6-3:\n\n{\n    \"program\": {\n        \"program_name\": \"MIT Course 6-3 (Computer Science)\",\n        \"total_credits_required\": \"180-192 units\",\n        \"core_courses\": \"6.1000, 6.100A& 6.100B, 6.100A& 16.C20[J], 6.1010, 6.1020, 6.1200[J], 6.1210, 6.1400[J], or 6.1220[J], 6.1800...\",\n        \"elective_requirements\": \"Restricted and Unrestricted electives\",\n        \"description\": \"Computer Science and Engineering (Course 6-3) | MIT Course Catalog Skip to Content AZ Index Bulletin Home MIT Home A – ZCalendar Archive Print Degree Charts Home>Degree Charts>Computer Science and Engineering (SB, Course 6-3) Search Catalog Submit search Catalog Navigation This Is MITToggle This Is MIT OverviewToggle Overview Around Campus Academic Program Administration Alumni Campus LifeToggle Campus Life Activities Arts at MIT Athletics Campus Media Dining Fraternities, Sororities, and Independent Living Groups Health Services Housing Parking Priscilla King Gray Public Service Center Religious, Spiritual, and Ethical Life Student Government Work-​Life and Family Resources Academic ResourcesToggle Academic Resources Advising and Support Digital Learning Disability and Access Services Information Systems and Technology Libraries Student Financial Services WebSIS Writing and Communication Center Undergraduate EducationToggle Undergraduate Education Academic ProgramsToggle Academic Programs First Year Major Course of Study Minors General Institute Requirements Academic and Research OptionsToggle Academic and Research Options Independent Activites Period Undergraduate Research Opportunities Program First-​Year Advising Seminars Interphase EDGE/​x Edgerton Center Flexible Grading Option Study at Other Universities Internships Abroad Career and Professional OptionsToggle Career and Professional Options Career Advising and Professional Development Teacher Licensure and Education ROTC Programs Admissions Costs Financial Aid Medical Requirements Graduate EducationToggle Graduate Education Graduate Study at MIT \n\nWHY (Requirements / Prerequisites Satisfied):\nRetrieved 6 relevant catalog sections for this query.\n\nCITATIONS:\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100L_chunk_0\n  • [Academic Policies] URL: https://catalog.mit.edu/policies | Chunk: policy_policy_0_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_1\n  • [Program 0] URL: local://program_0.txt | Chunk: program_0_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Program requirement information from catalog year 2024-2025.\n  ⚠️  Verify current requirements with academic advisor.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PG-03",
+      "category": "program_req",
+      "query": "Does 6.1200 count towards the Math requirement for CS?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "N/A",
+      "is_out_of_scope": false
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 1.0,
+    "latency": 0.08028101921081543,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nBased on the catalog context for MIT Course 6-3:\n\n{\n    \"program\": {\n        \"program_name\": \"MIT Course 6-3 (Computer Science)\",\n        \"total_credits_required\": \"180-192 units\",\n        \"core_courses\": \"6.1000, 6.100A& 6.100B, 6.100A& 16.C20[J], 6.1010, 6.1020, 6.1200[J], 6.1210, 6.1400[J], or 6.1220[J], 6.1800...\",\n        \"elective_requirements\": \"Restricted and Unrestricted electives\",\n        \"description\": \"Computer Science and Engineering (Course 6-3) | MIT Course Catalog Skip to Content AZ Index Bulletin Home MIT Home A – ZCalendar Archive Print Degree Charts Home>Degree Charts>Computer Science and Engineering (SB, Course 6-3) Search Catalog Submit search Catalog Navigation This Is MITToggle This Is MIT OverviewToggle Overview Around Campus Academic Program Administration Alumni Campus LifeToggle Campus Life Activities Arts at MIT Athletics Campus Media Dining Fraternities, Sororities, and Independent Living Groups Health Services Housing Parking Priscilla King Gray Public Service Center Religious, Spiritual, and Ethical Life Student Government Work-​Life and Family Resources Academic ResourcesToggle Academic Resources Advising and Support Digital Learning Disability and Access Services Information Systems and Technology Libraries Student Financial Services WebSIS Writing and Communication Center Undergraduate EducationToggle Undergraduate Education Academic ProgramsToggle Academic Programs First Year Major Course of Study Minors General Institute Requirements Academic and Research OptionsToggle Academic and Research Options Independent Activites Period Undergraduate Research Opportunities Program First-​Year Advising Seminars Interphase EDGE/​x Edgerton Center Flexible Grading Option Study at Other Universities Internships Abroad Career and Professional OptionsToggle Career and Professional Options Career Advising and Professional Development Teacher Licensure and Education ROTC Programs Admissions Costs Financial Aid Medical Requirements Graduate EducationToggle Graduate Education Graduate Study at MIT \n\nWHY (Requirements / Prerequisites Satisfied):\nRetrieved 6 relevant catalog sections for this query.\n\nCITATIONS:\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100L_chunk_0\n  • [Academic Policies] URL: https://catalog.mit.edu/policies | Chunk: policy_policy_0_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_1\n  • [Program 0] URL: local://program_0.txt | Chunk: program_0_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Program requirement information from catalog year 2024-2025.\n  ⚠️  Verify current requirements with academic advisor.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PG-04",
+      "category": "program_req",
+      "query": "What core courses are required for Course 18 (Mathematics)?",
+      "student_info": {
+        "completed_courses": [
+          "18.01"
+        ],
+        "target_program": "MIT Course 18",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "N/A",
+      "is_out_of_scope": false
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 1.0,
+    "latency": 0.11526918411254883,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nBased on the catalog context for MIT Course 18:\n\n{\n    \"program\": {\n        \"program_name\": \"MIT Course 6-3 (Computer Science)\",\n        \"total_credits_required\": \"180-192 units\",\n        \"core_courses\": \"6.1000, 6.100A& 6.100B, 6.100A& 16.C20[J], 6.1010, 6.1020, 6.1200[J], 6.1210, 6.1400[J], or 6.1220[J], 6.1800...\",\n        \"elective_requirements\": \"Restricted and Unrestricted electives\",\n        \"description\": \"Computer Science and Engineering (Course 6-3) | MIT Course Catalog Skip to Content AZ Index Bulletin Home MIT Home A – ZCalendar Archive Print Degree Charts Home>Degree Charts>Computer Science and Engineering (SB, Course 6-3) Search Catalog Submit search Catalog Navigation This Is MITToggle This Is MIT OverviewToggle Overview Around Campus Academic Program Administration Alumni Campus LifeToggle Campus Life Activities Arts at MIT Athletics Campus Media Dining Fraternities, Sororities, and Independent Living Groups Health Services Housing Parking Priscilla King Gray Public Service Center Religious, Spiritual, and Ethical Life Student Government Work-​Life and Family Resources Academic ResourcesToggle Academic Resources Advising and Support Digital Learning Disability and Access Services Information Systems and Technology Libraries Student Financial Services WebSIS Writing and Communication Center Undergraduate EducationToggle Undergraduate Education Academic ProgramsToggle Academic Programs First Year Major Course of Study Minors General Institute Requirements Academic and Research OptionsToggle Academic and Research Options Independent Activites Period Undergraduate Research Opportunities Program First-​Year Advising Seminars Interphase EDGE/​x Edgerton Center Flexible Grading Option Study at Other Universities Internships Abroad Career and Professional OptionsToggle Career and Professional Options Career Advising and Professional Development Teacher Licensure and Education ROTC Programs Admissions Costs Financial Aid Medical Requirements Graduate EducationToggle Graduate Education Graduate Study at MIT \n\nWHY (Requirements / Prerequisites Satisfied):\nRetrieved 6 relevant catalog sections for this query.\n\nCITATIONS:\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100L_chunk_0\n  • [Academic Policies] URL: https://catalog.mit.edu/policies | Chunk: policy_policy_0_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_1\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_0\n  • [Program 0] URL: local://program_0.txt | Chunk: program_0_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Program requirement information from catalog year 2024-2025.\n  ⚠️  Verify current requirements with academic advisor.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "PG-05",
+      "category": "program_req",
+      "query": "Is there a senior capstone requirement for degree?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": "N/A",
+      "is_out_of_scope": false
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": false,
+    "coverage": 1.0,
+    "latency": 0.10339188575744629,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nBased on the catalog context for MIT Course 6-3:\n\n{\n    \"program\": {\n        \"program_name\": \"MIT Course 6-3 (Computer Science)\",\n        \"total_credits_required\": \"180-192 units\",\n        \"core_courses\": \"6.1000, 6.100A& 6.100B, 6.100A& 16.C20[J], 6.1010, 6.1020, 6.1200[J], 6.1210, 6.1400[J], or 6.1220[J], 6.1800...\",\n        \"elective_requirements\": \"Restricted and Unrestricted electives\",\n        \"description\": \"Computer Science and Engineering (Course 6-3) | MIT Course Catalog Skip to Content AZ Index Bulletin Home MIT Home A – ZCalendar Archive Print Degree Charts Home>Degree Charts>Computer Science and Engineering (SB, Course 6-3) Search Catalog Submit search Catalog Navigation This Is MITToggle This Is MIT OverviewToggle Overview Around Campus Academic Program Administration Alumni Campus LifeToggle Campus Life Activities Arts at MIT Athletics Campus Media Dining Fraternities, Sororities, and Independent Living Groups Health Services Housing Parking Priscilla King Gray Public Service Center Religious, Spiritual, and Ethical Life Student Government Work-​Life and Family Resources Academic ResourcesToggle Academic Resources Advising and Support Digital Learning Disability and Access Services Information Systems and Technology Libraries Student Financial Services WebSIS Writing and Communication Center Undergraduate EducationToggle Undergraduate Education Academic ProgramsToggle Academic Programs First Year Major Course of Study Minors General Institute Requirements Academic and Research OptionsToggle Academic and Research Options Independent Activites Period Undergraduate Research Opportunities Program First-​Year Advising Seminars Interphase EDGE/​x Edgerton Center Flexible Grading Option Study at Other Universities Internships Abroad Career and Professional OptionsToggle Career and Professional Options Career Advising and Professional Development Teacher Licensure and Education ROTC Programs Admissions Costs Financial Aid Medical Requirements Graduate EducationToggle Graduate Education Graduate Study at MIT \n\nWHY (Requirements / Prerequisites Satisfied):\nRetrieved 6 relevant catalog sections for this query.\n\nCITATIONS:\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6a.html | Chunk: course_6.100L_chunk_0\n  • [Academic Policies] URL: https://catalog.mit.edu/policies | Chunk: policy_policy_0_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_0\n  • [Programs] URL: local://programs.txt | Chunk: programs_chunk_1\n  • [Program 0] URL: local://program_0.txt | Chunk: program_0_chunk_0\n\nASSUMPTIONS / NOT IN CATALOG:\n  ⚠️  Program requirement information from catalog year 2024-2025.\n  ⚠️  Verify current requirements with academic advisor.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "TS-01",
+      "category": "tricky",
+      "query": "Which professor is teaching 6.1210 next semester?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": null,
+      "is_out_of_scope": true
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": true,
+    "coverage": 1.0,
+    "latency": 0.11041665077209473,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nI don't have that information in the provided catalog/policies.\n\nThis question may be about:\n• Course availability in a specific semester (not in static catalog)\n• Instructor-specific assignments (contact department office)\n• Real-time enrollment/waitlist data (check student portal)\n• Financial aid or tuition (contact Bursar/Financial Aid Office)\n\nWHY (Requirements / Prerequisites Satisfied):\nThe requested information is not contained in the curated catalog documents.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.327_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.727_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n\nRISKS:\n  ⚠️  Verify all details with official university sources before acting.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "TS-02",
+      "category": "tricky",
+      "query": "What is the room number for the 18.01 lecture?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": null,
+      "is_out_of_scope": true
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": true,
+    "coverage": 1.0,
+    "latency": 0.0612795352935791,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nI don't have that information in the provided catalog/policies.\n\nThis question may be about:\n• Course availability in a specific semester (not in static catalog)\n• Instructor-specific assignments (contact department office)\n• Real-time enrollment/waitlist data (check student portal)\n• Financial aid or tuition (contact Bursar/Financial Aid Office)\n\nWHY (Requirements / Prerequisites Satisfied):\nThe requested information is not contained in the curated catalog documents.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.727_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n\nRISKS:\n  ⚠️  Verify all details with official university sources before acting.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "TS-03",
+      "category": "tricky",
+      "query": "How much does it cost to audit a course at MIT?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": null,
+      "is_out_of_scope": true
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": true,
+    "coverage": 1.0,
+    "latency": 0.03862905502319336,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nI don't have that information in the provided catalog/policies.\n\nThis question may be about:\n• Course availability in a specific semester (not in static catalog)\n• Instructor-specific assignments (contact department office)\n• Real-time enrollment/waitlist data (check student portal)\n• Financial aid or tuition (contact Bursar/Financial Aid Office)\n\nWHY (Requirements / Prerequisites Satisfied):\nThe requested information is not contained in the curated catalog documents.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.727_chunk_0\n\nRISKS:\n  ⚠️  Verify all details with official university sources before acting.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "TS-04",
+      "category": "tricky",
+      "query": "Is there a waitlist for 6.1020 right now?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": null,
+      "is_out_of_scope": true
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": true,
+    "coverage": 1.0,
+    "latency": 0.07131743431091309,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nI don't have that information in the provided catalog/policies.\n\nThis question may be about:\n• Course availability in a specific semester (not in static catalog)\n• Instructor-specific assignments (contact department office)\n• Real-time enrollment/waitlist data (check student portal)\n• Financial aid or tuition (contact Bursar/Financial Aid Office)\n\nWHY (Requirements / Prerequisites Satisfied):\nThe requested information is not contained in the curated catalog documents.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18a.html | Chunk: course_18.327_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.504_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.727_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n\nRISKS:\n  ⚠️  Verify all details with official university sources before acting.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  },
+  {
+    "case": {
+      "id": "TS-05",
+      "category": "tricky",
+      "query": "What is the deadline for financial aid applications?",
+      "student_info": {
+        "completed_courses": [
+          "6.100A"
+        ],
+        "target_program": "MIT Course 6-3",
+        "target_term": "Fall 2026",
+        "max_credits": 48
+      },
+      "expected_decision": null,
+      "is_out_of_scope": true
+    },
+    "actual_decision": null,
+    "passed": true,
+    "abstention_hit": true,
+    "coverage": 1.0,
+    "latency": 0.03399467468261719,
+    "formatted_output": "======================================================================\n📋 COURSE PLANNING ASSISTANT RESPONSE\n======================================================================\n\nANSWER / PLAN:\nI don't have that information in the provided catalog/policies.\n\nThis question may be about:\n• Course availability in a specific semester (not in static catalog)\n• Instructor-specific assignments (contact department office)\n• Real-time enrollment/waitlist data (check student portal)\n• Financial aid or tuition (contact Bursar/Financial Aid Office)\n\nWHY (Requirements / Prerequisites Satisfied):\nThe requested information is not contained in the curated catalog documents.\n\nCITATIONS:\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m6c.html | Chunk: course_6.7900_chunk_0\n  • [Program 1] URL: local://program_1.txt | Chunk: program_1_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.968_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.704_chunk_0\n  • [EECS/Math (MIT)] URL: http://student.mit.edu/catalog/m18b.html | Chunk: course_18.727_chunk_0\n\nRISKS:\n  ⚠️  Verify all details with official university sources before acting.\n\n======================================================================\n⚠️  PROFILE WARNINGS:\n  • Credit load of 48 exceeds normal maximum (18). Overload requires cumulative GPA ≥ 3.0 and advisor approval (Source: Academic Policies, Credit Load Limits)."
+  }
+]

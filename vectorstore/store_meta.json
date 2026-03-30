@@ -1,0 +1,6 @@
+{
+  "total_chunks": 384,
+  "dimension": 384,
+  "index_type": "IndexFlatIP",
+  "top_k_default": 5
+}
