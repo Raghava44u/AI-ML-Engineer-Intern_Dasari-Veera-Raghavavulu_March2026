@@ -44,7 +44,7 @@ ASSUMPTIONS / NOT IN CATALOG:
 ### Output
 
 ```
-DECISION: ⚠️ Need More Info
+DECISION:  Need More Info
 
 ANSWER / PLAN:
 You have strong prerequisites (A in 6.100A), but 6.3700 has additional requirements 
@@ -52,12 +52,12 @@ that may require instructor permission or departmental approval.
 
 WHY (Requirements / Prerequisites Satisfied):
 6.3700 (Advanced Topics) prerequisite structure:
-  • 6.100A: ✅ Completed with A grade (excellent standing)
-  • 6.1200 OR equivalent: ❌ Missing
-  • Recommended: Linear Algebra (18.06): ❌ Missing
+  • 6.100A:  Completed with A grade (excellent standing)
+  • 6.1200 OR equivalent: Missing
+  • Recommended: Linear Algebra (18.06): Missing
 
 Your status:
-  ✅ Strong performance in foundational CS
+   Strong performance in foundational CS
   ⚠️  Missing intermediate systems course
   ⚠️  Strong math background recommended
 

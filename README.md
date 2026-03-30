@@ -43,28 +43,28 @@ The **Agentic RAG Course Planning Assistant** combines:
 
 ## Features
 
-✅ **Prerequisite Verification**
+ **Prerequisite Verification**
 - Parses complex AND/OR prerequisite logic
 - Handles nested parentheses and multi-hop chains
 - Checks minimum grade requirements
 - Detects corequisites and GIR mappings
 
-✅ **Course Planning**
+ **Course Planning**
 - Generates step-by-step prerequisite chains
 - Recommends next-semester courses based on completion status
 - Respects credit limits and program requirements
 
-✅ **Verifiable Citations**
+ **Verifiable Citations**
 - Every answer linked to specific source chunks
 - Includes doc_id and page/line references
 - Transparent chain of reasoning
 
-✅ **Clarification Handling**
+ **Clarification Handling**
 - Detects incomplete student profiles
 - Asks targeted clarifying questions before proceeding
 - Gracefully handles missing data
 
-✅ **Safe Abstention**
+ **Safe Abstention**
 - Refuses to answer out-of-scope queries
 - Explicitly flags what the system cannot know (e.g., live schedules, staffing info)
 - Zero hallucinations on adversarial out-of-scope inputs
@@ -371,7 +371,7 @@ ASSUMPTIONS / NOT IN CATALOG:
 
 **Output:**
 ```
-DECISION: ✅ Eligible
+DECISION:  Eligible
 
 ANSWER / PLAN:
 Yes, you are eligible to take 6.1210. You have satisfied all prerequisite requirements.
@@ -410,7 +410,7 @@ ASSUMPTIONS / NOT IN CATALOG:
 
 **Output:**
 ```
-DECISION: ❌ Not Eligible
+DECISION:  Not Eligible
 
 ANSWER / PLAN:
 You are not eligible for 6.1800 yet. You are missing prerequisite courses.
@@ -456,7 +456,7 @@ ASSUMPTIONS / NOT IN CATALOG:
 
 **Output:**
 ```
-DECISION: ⚠️ Need More Info
+DECISION:  Need More Info
 
 ANSWER / PLAN:
 I cannot answer this question. Information about instructors, class times, and section schedules is not contained in the course catalog.
@@ -574,10 +574,10 @@ ASSUMPTIONS / NOT IN CATALOG:
 
 | Metric | Target | Result | Status |
 |--------|--------|--------|--------|
-| Overall Accuracy | ≥ 90% | 96% | ✅ PASS |
-| Citation Coverage | ≥ 95% | 98% | ✅ PASS |
-| Abstention Accuracy | 100% | 100% | ✅ PASS |
-| Hallucination Rate | 0% | 0% | ✅ PASS |
+| Overall Accuracy | ≥ 90% | 96% |  PASS |
+| Citation Coverage | ≥ 95% | 98% |  PASS |
+| Abstention Accuracy | 100% | 100% |  PASS |
+| Hallucination Rate | 0% | 0% |  PASS |
 
 ---
 
@@ -669,7 +669,7 @@ Student Profile
   Target Program: [input here]
   ...
 
-DECISION: ✅ Eligible
+DECISION:  Eligible
 [Full structured response]
 ```
 
@@ -728,7 +728,7 @@ Executes: build → demo → eval (produces full report)
 
 ## Improvements & Next Steps
 
-### 🚀 Short-term Enhancements (Immediate)
+###  Short-term Enhancements (Immediate)
 
 1. **Better Prompt Engineering**
    - Add few-shot examples to system prompt
@@ -750,7 +750,7 @@ Executes: build → demo → eval (produces full report)
    - Track grade requirements per prerequisite (some may require B+)
    - Include GPA thresholds for program-level requirements
 
-### 📈 Medium-term Enhancements (1-2 weeks)
+###  Medium-term Enhancements (1-2 weeks)
 
 5. **Multi-turn Conversation**
    - Maintain conversation history
@@ -772,7 +772,7 @@ Executes: build → demo → eval (produces full report)
    - Self-critique loop: if hallucination suspected, re-retrieve + regenerate
    - Confidence scoring per claim
 
-### 🔬 Advanced Features (2-4 weeks)
+###  Advanced Features (2-4 weeks)
 
 9. **Corequisite Planning**
    - Track which courses can be taken concurrently
@@ -811,7 +811,7 @@ Executes: build → demo → eval (produces full report)
     - Error tracking (Sentry)
     - Performance metrics (retrieval latency, LLM token usage, cost)
 
-### 🎯 Domain Expansion
+###  Domain Expansion
 
 16. **Multi-institution Support**
     - Add Stanford, CMU, Berkeley catalogs
