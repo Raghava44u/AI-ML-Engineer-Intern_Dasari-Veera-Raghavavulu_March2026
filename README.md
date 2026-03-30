@@ -40,7 +40,7 @@ The system implements a rigid Abstract Syntax Tree (AST) methodology to map huma
 To uphold transparency, the system reliably answers in the following rigid format:
 
 ```text
-DECISION: [✅ Eligible | ❌ Not Eligible | ⚠️ Need More Info]
+DECISION: [ Eligible |  Not Eligible |  Need More Info]
 
 ANSWER / PLAN:
 [Clear, step-by-step sequence or factual answer]
